@@ -1,0 +1,15 @@
+<p>Get Courses: </p>
+
+<button (click)="login()">Login</button><br><br>
+<button (click)="getCourses()">Get Courses</button>
+<br><br>
+<hr>
+
+<ul>
+  <li *ngFor="let item of courses">{{item.name}}</li>
+</ul>
+<br><br>
+
+<p>Login Status : {{loginStatus}}</p>
+
+<router-outlet></router-outlet>
